@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "525091583800",
+    "firebase_url": "https://gpsirsa1.firebaseio.com",
+    "project_id": "gpsirsa1",
+    "storage_bucket": "gpsirsa1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525091583800:android:f7e2e39834a37f9b",
+        "android_client_info": {
+          "package_name": "com.vaibhavpandey936gmail.gpsirsa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525091583800-39s8eqlip01ufmlldiqrg14q7kdh2iun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpbtCNSkDnESexteGNxnSxe54qCfsd72A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

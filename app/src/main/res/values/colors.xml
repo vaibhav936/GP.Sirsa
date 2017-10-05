@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2007f9</color>
+    <color name="colorPrimaryDark">#ad0d0200</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="purple">#9ea3cbfa</color>
+    <color name="green">#7baaf2</color>
+    <color name="red">#f54242</color>
+    <color name="brown1">#d7c6ab</color>
+    <!-- Green -->
+    <color name="green_temp">#23A96E</color>
+    <color name="green_dark">#159204</color>
+    <color name="bright_green">#fb244fa9</color>
+    <color name="button_green">#10a54a</color>
+</resources>

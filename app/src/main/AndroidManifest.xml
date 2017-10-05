@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gpsirsa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icongp"
+        android:label="Govt Polytechnic Sirsa"
+        android:roundIcon="@drawable/icongp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".notification"
+            android:label="Notifications"
+            android:parentActivityName=".Home" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Home" />
+
+        <activity
+            android:name=".downloads"
+            android:label="Downloads"
+            android:parentActivityName=".Home" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Home" />
+
+        <activity
+            android:name=".syllabus_page"
+            android:label="Syllabus"
+            android:parentActivityName=".downloads">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".downloads" />
+        </activity>
+        <activity
+            android:name=".Contact"
+            android:label="Contact"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".info"
+            android:label="Info"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".fees"
+            android:label="Info About Fee"
+            android:parentActivityName=".info">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".admission"
+            android:label="Info About Admission"
+            android:parentActivityName=".info">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".placement"
+            android:label="Info About Placement"
+            android:parentActivityName=".info">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".scholarship"
+            android:label="Info Abot Scholarship"
+            android:parentActivityName=".info">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".question_paper"
+            android:label="Old Question Papers"
+            android:parentActivityName=".downloads">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity android:name=".paper" />
+        <activity
+            android:name=".about_app"
+            android:label="About Developer"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/icongp" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <activity android:name=".feedback"
+            android:parentActivityName=".Home"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Home" />
+    </application>
+
+</manifest>

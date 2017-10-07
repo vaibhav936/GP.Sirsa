@@ -7,6 +7,9 @@
         android:icon="@android:drawable/ic_menu_myplaces"
         android:title="About Developer" />
     <item
+        android:id="@+id/update1"
+        android:title="Update" />
+    <item
         android:id="@+id/email"
         android:title="Give me your feedback" />
 

@@ -134,6 +134,10 @@ public class Home extends AppCompatActivity {
                 Intent intent = new Intent(this,about_app.class);
                 startActivity(intent);
                 return true;
+            case R.id.update1:
+                Intent r = new Intent(this,about_app.class);
+                startActivity(r);
+                return true;
             case R.id.email:
                 Intent i = new Intent(this,feedback.class);
                 startActivity(i);
